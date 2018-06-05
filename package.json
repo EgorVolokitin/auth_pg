@@ -1,0 +1,17 @@
+{
+  "name": "auth_pg",
+  "version": "1.2.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Egor_Volokitin",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "https": "^1.0.0",
+    "pg": "^7.4.3",
+    "querystring": "^0.2.0"
+  }
+}
