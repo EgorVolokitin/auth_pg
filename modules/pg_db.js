@@ -1,7 +1,7 @@
 'use strict';
 
 const pg = require('pg'),
-  consts = require('./constains');
+  consts = require('./constants');
 
 // Создаем пул
 let pgPool = new pg.Pool(consts.db);
