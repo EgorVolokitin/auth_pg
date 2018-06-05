@@ -1,5 +1,5 @@
 const
-  auth = require('./lib/authLib'),
+  auth = require('./lib/auth_lib'),
   bll = require('./lib/bll'),
   models = require('./models/models');
 
