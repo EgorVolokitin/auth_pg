@@ -8,7 +8,7 @@
 > Предполагается что ваш проект построен на [Node.js](https://nodejs.or/en/downolad/).
 
 ```sh
-$ npm install mysql
+$ npm install --save auth_pg
 ```
 
 Перед началом:
