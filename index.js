@@ -1,9 +1,11 @@
 const
   auth = require('./lib/auth_lib'),
   bll = require('./lib/bll'),
-  models = require('./models/models');
+  models = require('./models/models'),
+  consts = require('./modules/constants');
 
 module.exports = exports = {
+
   /**
    * Функция входа в систему
    * @param {string} salt Соль
@@ -24,7 +26,7 @@ module.exports = exports = {
     .then(ck => {
       // Если вернулось значение - все ок.
       if(ck) {
-        return true;
+        return res.redirect('/');
       }
       // Иначе - выдадим false. Регистрация не удалась
       return false;
@@ -85,5 +87,15 @@ module.exports = exports = {
       // В случае ошибки - вернем ее.
       return new Error(e);
     });
-  }
+  },
+
+  /**
+   * Функция установки данных для коннекта к бд.
+   */
+  setConfig: function(dbName, host, password, user) {
+    consts.db.database = dbName,
+    consts.db.host = host,
+    consts.db.password = password,
+    consts.db.user = user
+  },
 };
