@@ -23,12 +23,7 @@ $ npm install --save auth_pg
 
 ## Документация
 
-```sh
-$ npm install mysql
-```
-
 ### Подключение в проекте
-
 
 ```js
 const auth = require('auth_pg');
